@@ -94,4 +94,4 @@ int main() {
     return 0;
 }
 
-// Make rules for the game 1.print no use of capslock for any letter/string make a yess or no for  
+  
