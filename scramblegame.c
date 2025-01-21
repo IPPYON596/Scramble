@@ -48,6 +48,10 @@ int main() {
     printf("2. Your task is to guess the original word.\n");
     printf("3. You can play as many rounds as you like.\n");
     printf("4. Your streak increases with each correct guess but resets if you guess wrong.\n");
+    printf("5. No uppercase letters or special characters must be used.\n");
+    printf("6. No spaces are allowed.\n");
+    printf("7. No integers are allowed in string\n");
+    printf("8. No viewing the words.txt file\n");
     printf("\nPress Enter to start the game...");
     getchar();
     char words[1000][50]; // Array to store up to 1000 words
@@ -100,11 +104,7 @@ int main() {
 
     } while (playAgain == 'y' || playAgain == 'Y');
     
- 
     printf("Thanks for playing! Final Streak: %d\n", correctStreak);
-    
-    
-    
     return 0;
 }
 
