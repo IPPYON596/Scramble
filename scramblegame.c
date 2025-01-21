@@ -40,6 +40,16 @@ int loadWords(const char *filename, char words[][50], int maxWords) {
 }
 
 int main() {
+
+    // Rules of Game 
+    printf("Welcome to the Word Scramble Game!\n");
+    printf("Rules:\n");
+    printf("1. A scrambled word will be shown.\n");
+    printf("2. Your task is to guess the original word.\n");
+    printf("3. You can play as many rounds as you like.\n");
+    printf("4. Your streak increases with each correct guess but resets if you guess wrong.\n");
+    printf("\nPress Enter to start the game...");
+    getchar();
     char words[1000][50]; // Array to store up to 1000 words
     int totalWords;
 
@@ -89,8 +99,12 @@ int main() {
         scanf(" %c", &playAgain);
 
     } while (playAgain == 'y' || playAgain == 'Y');
-
+    
+ 
     printf("Thanks for playing! Final Streak: %d\n", correctStreak);
+    
+    
+    
     return 0;
 }
 
